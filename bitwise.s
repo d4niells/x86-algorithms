@@ -1,5 +1,5 @@
 .section .data
-    quocient: .word 8 
+    quocient: .word 0 
  
     success_msg: .asciz "É potência de 2\n"
     success_msg_len = . - success_msg
@@ -14,7 +14,7 @@ main:
     # q & (q - 1)
     movw quocient, %ax
     cmpw $0, %ax
-    je fail
+    jle fail
 
     decw %ax
     andw quocient, %ax
