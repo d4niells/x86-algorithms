@@ -8,7 +8,7 @@ The program uses the following bitwise equation to check if a quocient \( q \) i
 
 ```text
 q & (q - 1) = 0
-
+```
 So, if the result of `q & (q - 1)` is zero, `q` is a power of 2.
 
 ## Running the Code
